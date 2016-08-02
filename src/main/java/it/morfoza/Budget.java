@@ -8,28 +8,27 @@ import java.util.Scanner;
 public class Budget {
 
 
+
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
 
-        double number1;
+        PaniZBiuraPodrozy milaPaniZBiura = new PaniZBiuraPodrozy();
 
-        double number2;
+        Destination wymarzoneMiejsce = new Destination();
+        wymarzoneMiejsce.name = "Honolulu";
+        wymarzoneMiejsce.pricePerDay = 459;
 
-
-        System.out.println("Ile masz hajsu na wakacje? (podaj w PLN)");
-        number1 = input.nextInt();
-
-        System.out.println("Na ile dni chcesz wyjechać?");
-        number2 = input.nextInt();
-
-
-        double dailyBudget = number1/number2;
-        System.out.println("Twój dzienny budżet to: " + dailyBudget);
+        milaPaniZBiura.chlamDoOpchniecia = wymarzoneMiejsce;
 
 
 
+        int dupa = 1;
+        milaPaniZBiura.zrobWywiad();
+        dupa = 2;
+        milaPaniZBiura.zrobWywiad();
+        dupa = 3;
+        milaPaniZBiura.zrobWywiad();
+        System.out.println(wymarzoneMiejsce);    }
 
 
-    }
 
 }
