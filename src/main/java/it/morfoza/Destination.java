@@ -8,4 +8,6 @@ public class Destination {
     public String name;
     public double pricePerDay;
 
+    // TU byłem! Tony Halik.
+
 }
