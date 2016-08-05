@@ -28,7 +28,8 @@ public class Budget {
         milaPaniZBiura.zrobWywiad();
         dupa = 3;
         milaPaniZBiura.zrobWywiad();
-        System.out.println(wymarzoneMiejsce);    }
+        System.out.println(wymarzoneMiejsce);
+    }
 
 
 

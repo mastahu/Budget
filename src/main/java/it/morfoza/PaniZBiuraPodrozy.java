@@ -21,10 +21,9 @@ public class PaniZBiuraPodrozy {
         System.out.println("Ile masz hajsu na wakacje? (podaj w PLN)");
         number1 = input.nextInt();
 
-        if (number1 < 10) {
+        if (number1 <= 0) {
             throw new BrakKlientaException();
         }
-
 
         System.out.println("Na ile dni chcesz wyjechać?");
         number2 = input.nextInt();
@@ -37,6 +36,8 @@ public class PaniZBiuraPodrozy {
         }
         if (dailyBudget >= superOferta.pricePerDay) {
             System.out.println("Możesz jechać do " + superOferta.name);
+        } else if (dailyBudget < 30) {
+            System.out.println("Nie stać cię na wakacje. Idź zarobić hajs.");
         }
     }
 
