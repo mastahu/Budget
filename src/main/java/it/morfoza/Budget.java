@@ -9,13 +9,14 @@ public class Budget {
 
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws BrakKlientaException {
 
         PaniZBiuraPodrozy milaPaniZBiura = new PaniZBiuraPodrozy();
 
         Destination wymarzoneMiejsce = new Destination();
         wymarzoneMiejsce.name = "Honolulu";
         wymarzoneMiejsce.pricePerDay = 459;
+        wymarzoneMiejsce.howFar = 8500;
 
         milaPaniZBiura.chlamDoOpchniecia = wymarzoneMiejsce;
 

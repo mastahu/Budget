@@ -7,6 +7,7 @@ public class Destination {
 
     public String name;
     public double pricePerDay;
+    public int howFar;
 
     // TU byłem! Tony Halik.
 
