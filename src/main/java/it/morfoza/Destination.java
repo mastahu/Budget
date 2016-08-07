@@ -11,4 +11,12 @@ public class Destination {
 
     // TU byłem! Tony Halik.
 
+    public Destination(String name, double pricePerDay, int howFar) {
+
+        this.name = name;
+        this.pricePerDay = pricePerDay;
+        this.howFar = howFar;
+    }
+
+
 }
