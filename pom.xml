@@ -1,49 +1,58 @@
 <project>
-<modelVersion>4.0.0</modelVersion>
-<groupId>it.morfoza</groupId>
-<artifactId>budget</artifactId>
-<version>1.0.0</version>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>it.morfoza</groupId>
+    <artifactId>budget</artifactId>
+    <version>1.0.0</version>
 
-<build>
-  <plugins>
-      <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.5.1</version>
-          <configuration>
-              <source>8</source>
-              <target>8</target>
-          </configuration>
-      </plugin>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
-      <plugin>
-          <artifactId>maven-assembly-plugin</artifactId>
-          <version>2.3</version>
-          <configuration>
-              <descriptorRefs>
-                  <descriptorRef>jar-with-dependencies</descriptorRef>
-              </descriptorRefs>
-              <finalName>budget-1.0.0</finalName>
-              <appendAssemblyId>false</appendAssemblyId>
-              <archive>
-                  <manifest>
-                      <mainClass>it.morfoza.Budget</mainClass>
-                  </manifest>
-              </archive>
-          </configuration>
-          <executions>
-              <execution>
-                  <id>build-jar-with-dependencies</id>
-                  <phase>package</phase>
-                  <goals>
-                      <goal>single</goal>
-                  </goals>
-              </execution>
-          </executions>
-      </plugin>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
 
-  </plugins>
-</build>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <finalName>budget-1.0.0</finalName>
+                    <appendAssemblyId>false</appendAssemblyId>
+                    <archive>
+                        <manifest>
+                            <mainClass>it.morfoza.Budget</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>build-jar-with-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
 
 
 </project>
